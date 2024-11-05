@@ -1,0 +1,14 @@
+.landing{
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0;
+    
+}
+
+@media (max-width: 500px) {
+    .landing {
+        width: 100%;
+        margin: 0 0 2rem;
+        padding: 0;
+    }
+}

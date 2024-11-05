@@ -1,0 +1,63 @@
+/* styling for the previous and next buttons */
+
+.btn-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.prev-btn, .next-btn {
+    border-radius: 8px;
+    padding: 0.8rem 10%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 15%;
+    background-color: rgb(69, 155, 218);
+    color: white;
+    border: 1px solid white;
+    
+  }
+
+  .next-btn{
+    flex-direction: row-reverse;
+  }
+
+  /* hover effect styling */
+
+  .prev-btn:hover, .next-btn:hover{
+    background-color: rgba(69, 155, 218, 0.8);
+  }
+
+  
+
+/* responsiveness for tablet sizes */
+
+@media (max-width: 768px) {
+    .prev-btn, .next-btn {
+        padding: 1rem 0.8rem;
+        width: 22%;
+        font-size: 1rem;
+    }
+}
+
+/* responsiveness for mobile sizes */
+
+@media (max-width: 500px) {
+    .btn-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .prev-btn, .next-btn {
+        padding: 0.3rem;
+        width: 22%;
+        font-size: 0.8rem;
+        display: block;
+    }
+
+}
+
+
+  

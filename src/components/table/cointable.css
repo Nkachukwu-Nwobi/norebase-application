@@ -1,0 +1,161 @@
+/* styling for table component */
+
+.table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.header {
+  background-color: rgb(69, 155, 218);
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+.header h1 {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 100% 1rem 0;
+  animation: banner 10s linear infinite;
+}
+
+/* animation for norebase banner */
+
+@keyframes banner {
+  0% {
+    transform: translateX(72%);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+table {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+thead {
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  position: relative;
+  align-items: center;
+}
+
+th {
+  background-color: rgb(210, 208, 208);
+  padding: 12px;
+  text-align: left;
+  /* color: white; */
+}
+
+tbody {
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: rgb(69, 155, 218);
+}
+
+/* implementation for multiple colored rows effect */
+
+.odd-row {
+  background-color: rgb(210, 208, 208);
+}
+
+/* styling the button section of the table */
+
+.btn-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+/* styling of dropdown menu for changing page limit */
+
+.limit-filter {
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  color: black;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* responsiveness for tablet sizes */
+
+@media (max-width: 768px) {
+  .table {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .limit-filter {
+    position: static;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: start;
+    margin: 0.2rem 0;
+    padding-left: 0.5rem;
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+/* responsiveness for mobile sizes */
+
+@media (max-width: 500px) {
+  .table {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header h1 {
+    font-size: 1rem;
+  }
+
+  .btn-section {
+    display: flex;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+}
